@@ -78,7 +78,7 @@ This application uses the Google Gemini API for AI title suggestions. You need t
     *   Create a new API key. It will typically start with `AIza...`.
 
 2.  **Create a `.env.local` file:**
-    In the root directory of your project (`E:/belajar/activity-scheduler-app/`), create a new file named `.env.local`.
+    In the root directory of your project (`X:/path/to/activity-scheduler-app/`), create a new file named `.env.local`.
 
 3.  **Add your API Key to `.env.local`:**
     Open the `.env.local` file and add the following line, replacing `<YOUR_GEMINI_API_KEY>` with the actual API key you obtained:
