@@ -22,7 +22,14 @@ const AnalyticsView: React.FC<AnalyticsViewProps> = ({ activities }) => {
     totalTimeSpent 
   } = useMemo(() => activityService.getAnalyticsData(activities), [activities]);
 
-  const pieChartColors = CATEGORIES.map(cat => CATEGORY_COLORS[cat]?.bg.replace('bg-', '').replace('-100', '-500') || '#8884d8');
+  const CATEGORY_HEX_COLORS: { [key in ActivityCategory]: string } = {
+    [ActivityCategory.WORK]: '#60A5FA', // Blue
+    [ActivityCategory.PERSONAL]: '#4ADE80', // Green
+    [ActivityCategory.FITNESS]: '#FACC15', // Yellow
+    [ActivityCategory.LEARNING]: '#A78BFA', // Purple
+    [ActivityCategory.SOCIAL]: '#F472B6', // Pink
+    [ActivityCategory.OTHER]: '#9CA3AF', // Gray
+  };
   
   // Custom active shape for PieChart to display more info
     const renderActiveShape = (props: any) => {
@@ -125,7 +132,11 @@ const AnalyticsView: React.FC<AnalyticsViewProps> = ({ activities }) => {
                     itemStyle={{ color: '#A0AEC0' }}
                 />
                 <Legend wrapperStyle={{ color: '#E2E8F0' }} />
-                <Bar dataKey="count" name="Activities" fill="#60a5fa" radius={[4, 4, 0, 0]} />
+                <Bar dataKey="count" name="Activities" radius={[4, 4, 0, 0]}>
+                    {activitiesPerCategory.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={CATEGORY_HEX_COLORS[entry.name as ActivityCategory]} />
+                    ))}
+                </Bar>
             </BarChart>
             </ResponsiveContainer>
         ) : <p className="text-gray-400 text-center py-8">Not enough data for this chart.</p>}
@@ -153,7 +164,7 @@ const AnalyticsView: React.FC<AnalyticsViewProps> = ({ activities }) => {
                     paddingAngle={2}
                 >
                 {timePerCategory.filter(d => d.value > 0).map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={pieChartColors[CATEGORIES.indexOf(entry.name as ActivityCategory)] || '#82ca9d'} />
+                    <Cell key={`cell-${index}`} fill={CATEGORY_HEX_COLORS[entry.name as ActivityCategory]} />
                 ))}
                 </Pie>
                 <Tooltip 
