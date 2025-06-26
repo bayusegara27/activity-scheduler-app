@@ -16,9 +16,19 @@ Here are some screenshots of the application in action:
 <table>
   <tr>
     <td>
-      <img src="https://raw.githubusercontent.com/bayusegara27/activity-scheduler-app/refs/heads/master/preview/Activity%20Scheduler%20main%20menu.png" alt="Application Screenshot 1" width="480">
+      <img src="https://raw.githubusercontent.com/bayusegara27/activity-scheduler-app/refs/heads/master/preview/Activity%20Scheduler%20main%20menu.png" alt="Application Screenshot 1" width="480" height="270">
     </td>
     <td>
+      <img src="https://raw.githubusercontent.com/bayusegara27/activity-scheduler-app/refs/heads/master/preview/Activity%20Scheduler%20Add%20Activity.png" alt="Application Screenshot 2" width="480" height="270">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://raw.githubusercontent.com/bayusegara27/activity-scheduler-app/refs/heads/master/preview/Activity%20Scheduler%20all%20activity.png" alt="Application Screenshot 3" width="480" height="270">
+    </td>
+    <td>
+      <img src="https://raw.githubusercontent.com/bayusegara27/activity-scheduler-app/refs/heads/master/preview/Activity%20Scheduler%20analytics.png" alt="Application Screenshot 4" width="480" height="270">
+    </td>
   </tr>
 </table>
 
