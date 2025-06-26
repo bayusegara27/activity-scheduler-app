@@ -13,11 +13,14 @@ This is a simple activity scheduling application built with React and Vite, feat
 
 Here are some screenshots of the application in action:
 
-![Application Screenshot 1](https://via.placeholder.com/1920x1080?text=Screenshot+1)
-
-![Application Screenshot 2](https://via.placeholder.com/1920x1080?text=Screenshot+2)
-
-![Application Screenshot 3](https://via.placeholder.com/1920x1080?text=Screenshot+3)
+<table>
+  <tr>
+    <td>
+      <img src="https://raw.githubusercontent.com/bayusegara27/activity-scheduler-app/refs/heads/master/preview/Activity%20Scheduler%20main%20menu.png" alt="Application Screenshot 1" width="480">
+    </td>
+    <td>
+  </tr>
+</table>
 
 ## Technologies Used
 
@@ -36,7 +39,7 @@ Follow these steps to get the project up and running on your local machine.
 ### 1. Clone the Repository (if you haven't already)
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/bayusegara27/activity-scheduler-app.git
 cd activity-scheduler-app
 ```
 
