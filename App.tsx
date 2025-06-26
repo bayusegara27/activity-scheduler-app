@@ -116,6 +116,15 @@ const App: React.FC = () => {
         />
       )}
       <Footer />
+
+      {/* Floating Add Activity Button for Mobile */}
+      <button
+        onClick={openAddModal}
+        className="md:hidden fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-150 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75"
+        aria-label="Add new activity"
+      >
+        <PlusCircleIcon className="w-8 h-8" />
+      </button>
     </div>
   );
 };

@@ -51,7 +51,7 @@ const ActivityItem: React.FC<ActivityItemProps> = ({ activity, onEdit, onDelete,
           <CategoryPill category={category} />
         </div>
 
-        <div className="flex items-center space-x-2 flex-shrink-0">
+        <div className="flex items-center space-x-2 flex-shrink-0 justify-end">
           <button
             onClick={() => onToggleComplete(id)}
             className={`p-2 rounded-full transition-colors duration-150 ${

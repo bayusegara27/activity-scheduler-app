@@ -51,7 +51,7 @@ const Header: React.FC<HeaderProps> = ({ currentView, setCurrentView, onAddActiv
 
           <button
             onClick={onAddActivityClick}
-            className="flex items-center bg-accent-DEFAULT hover:bg-accent-dark text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-150 transform hover:scale-105"
+            className="hidden md:flex items-center bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-150 transform hover:scale-105"
           >
             <PlusCircleIcon className="w-5 h-5 mr-2" />
             Add Activity
